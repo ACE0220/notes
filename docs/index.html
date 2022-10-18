@@ -20,11 +20,12 @@
       auto2top: true,
       autoHeader: true,
       mergeNavbar: true,
-      routerMode: 'history',
-      // basePath: '/notes/',
-      relativePath: true,
+      // routerMode: 'history',
       themeable: {
         readyTransition: true // default
+      },
+      alias: {
+        '/notes/*': '/*',
       }
     }
   </script>
