@@ -1,0 +1,1 @@
+* [单例模式](/basic/design-pattern/single-ton.md)
