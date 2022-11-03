@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+codes/esnext
+codes/javascript
+codes/network
+codes/node
+codes/webpack
