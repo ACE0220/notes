@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": false,
+    // 每次保存时将代码按eslint格式进行保存
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript"
+    ],
+    "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
+}

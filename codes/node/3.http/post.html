@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="account" />
+      <input type="password" id="psw" />
+      <button id="submit">提交</button>
+    </div>
+    <script>
+      let ac = document.getElementById("account");
+      let psw = document.getElementById("psw");
+
+      let acContent = ac.value;
+      let pswContent = psw.value;
+
+      document.getElementById("submit").addEventListener("click", function () {
+        let acContent = ac.value;
+        let pswContent = psw.value;
+        
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", 'http://localhost:3000')
+        xhr.responseType = 'json';
+        xhr.onload = function() {
+            console.log(xhr.response);
+        }
+        xhr.send(JSON.stringify({ac: acContent, psw: pswContent}));
+      });
+    </script>
+  </body>
+</html>
